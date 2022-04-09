@@ -1,0 +1,8 @@
+int var_glob = 5;
+
+int f0(){
+	int x = 5;
+	int y = 8;
+	int var_loc = x + y; 
+	return var_loc;
+}

@@ -1,0 +1,14 @@
+int n = 5;
+
+int fact() {
+    if( n < 2 ) {
+        return 1;
+    } else {
+        n = n + -1;
+        return fact();
+    }
+}
+
+void main() {
+    putchar(fact());
+}

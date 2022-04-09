@@ -1,0 +1,16 @@
+int PARAM=5;
+
+int f0(){
+    if(PARAM>=5) {
+        return 3;
+    } else {
+        return 4;
+    }
+}
+
+bool f1() {
+    if (PARAM==5) {
+        return true;
+    }
+    return false;
+}

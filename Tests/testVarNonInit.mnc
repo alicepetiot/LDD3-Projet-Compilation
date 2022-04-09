@@ -1,0 +1,7 @@
+int main(){
+	int undeclared;
+	int declared = 10;
+	undeclared = 1;
+	undeclared = declared;
+	return 0;
+}

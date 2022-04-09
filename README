@@ -1,0 +1,45 @@
+# DM de Compilation
+LDD3 Magistère d'Informatique - Brice POINTAL et Alice PETIOT
+## Tables des matières
+0. [Enoncé](#enoncé)
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Lignes de commandes](#lignesdecommandes)
+4. [Extensions](#extensions)
+5. [Difficultés rencontrées](#difficultésrencontrées)
+***
+## Enoncé
+[Langages, interprétation, compilation DM - Mini-C](https://www.lri.fr/~blsk/CompilationLDD3/dm-mnc.html)
+***
+## Introduction
+L'objectif de ce DM est de construire la partie avant d'un compilateur pour un petit langage impératif correspondant à un fragment du langage C.
+***
+## Installation
+Liste des technologies utilisées pendant ce projet:
+* [Ocaml](https://ocaml.org/index.fr.html): Version 4.08.1
+* [Menhir](https://opam.ocaml.org/packages/menhir/): Version 20200123
+* [Dune](https://dune.build/): Version 2.1.3
+***
+## Lignes de commandes
+* [compiler] : make minic.exe
+* [compiler et tester] : make tests 
+***
+## Extensions
+* [Etendre le langage] :
+    - [Symboles] : > , >= , <= , ==, || , &&, - (négation et soustraction), +, *
+    - [Types] : bool et void
+    - [Autres fonctionnalitées] :
+        - boucle while, branchement if/if...else, instruction putchar(x)
+        - déclaration de variables (initialisées ou non)
+        - affectation de valeur aux variables
+        - déclaration de fonctions
+        - déclaration de variables locales
+        - appel de fonction n'utilisant pas de paramètres
+* [Evaluer] : évaluation des expressions et des instructions
+***
+## Difficultés rencontrées
+* [Gestion des fonctions]:
+    - Nouvelle déclaration avec des paramètres
+    - Appel par fonction avec des paramètres (erreur Not_found)
+* [Gestion de l'environnement]: 
+    - Environnement local à une fonction

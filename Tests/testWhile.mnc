@@ -1,0 +1,7 @@
+int PARAM = 5;
+
+int f0() {
+    while(PARAM>0){
+        PARAM = PARAM-2;
+    }
+}
